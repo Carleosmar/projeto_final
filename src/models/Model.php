@@ -25,7 +25,7 @@ class Model {
         $this->values[$key] = $value;
     }
 
-    public static function getOne($filters = [], $columns = '*') {
+    public static function get($filters = [], $columns = '*') {
         $objects = [];
         $result = static::getResultsetFromSelect($filters, $columns = '*');
         if($result) {
